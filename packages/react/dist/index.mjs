@@ -97,8 +97,8 @@ var {
   styled,
   css,
   globalCss,
-  keyframes,
   getCssText,
+  keyframes,
   theme,
   createTheme,
   config
@@ -111,24 +111,20 @@ var {
     colors,
     fontSizes,
     fontWeights,
-    lineHeights,
     fonts,
+    lineHeights,
     radii,
     space
   }
 });
 
 // src/index.tsx
-import { jsx } from "react/jsx-runtime";
 var Button = styled("button", {
   fontFamily: "$default",
   backgroundColor: "$ignite500",
   borderRadius: "$md",
   padding: "$4"
 });
-function App() {
-  return /* @__PURE__ */ jsx(Button, { children: "Hello World" });
-}
 export {
-  App
+  Button
 };
