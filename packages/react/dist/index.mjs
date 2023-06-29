@@ -137,6 +137,7 @@ var Box = styled("div", {
   backgroundColor: "$gray200",
   border: "1px solid $gray600"
 });
+Box.displayName = "Box";
 
 // src/components/Text.tsx
 var Text = styled("p", {
@@ -165,6 +166,7 @@ var Text = styled("p", {
     size: "md"
   }
 });
+Text.displayName = "Text";
 
 // src/components/Heading.tsx
 var Heading = styled("h2", {
@@ -188,6 +190,7 @@ var Heading = styled("h2", {
     size: "md"
   }
 });
+Heading.displayName = "Heading";
 
 // src/components/Avatar/index.tsx
 import React from "react";
@@ -404,6 +407,7 @@ g3.displayName = "User";
 function Avatar2(props) {
   return /* @__PURE__ */ React.createElement(AvatarContainer, null, /* @__PURE__ */ React.createElement(AvatarImage, __spreadValues({}, props)), /* @__PURE__ */ React.createElement(AvatarFallback, { delayMs: 600 }, /* @__PURE__ */ React.createElement(g3, null)));
 }
+Avatar2.displayName = "Avatar";
 
 // src/components/Button.tsx
 var Button = styled("button", {
@@ -476,6 +480,7 @@ var Button = styled("button", {
     size: "md"
   }
 });
+Button.displayName = "Button";
 
 // src/components/TextInput/index.tsx
 import React2 from "react";
@@ -527,6 +532,7 @@ function TextInput(_a) {
   var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
   return /* @__PURE__ */ React2.createElement(TextInputContainer, null, !!prefix && /* @__PURE__ */ React2.createElement(Prefix, null, prefix), /* @__PURE__ */ React2.createElement(Input, __spreadValues({}, props)));
 }
+TextInput.displayName = "TextInput";
 
 // src/components/TextArea.tsx
 var TextArea = styled("textarea", {
@@ -553,6 +559,7 @@ var TextArea = styled("textarea", {
     color: "$gray400"
   }
 });
+TextArea.displayName = "TextArea";
 
 // src/components/CheckBox/index.tsx
 import React3 from "react";
@@ -612,6 +619,7 @@ var CheckboxIndicator = styled(Checkbox.Indicator, {
 function Checkbox2(props) {
   return /* @__PURE__ */ React3.createElement(CheckboxContainer, __spreadValues({}, props), /* @__PURE__ */ React3.createElement(CheckboxIndicator, { asChild: true }, /* @__PURE__ */ React3.createElement(M2, { weight: "bold" })));
 }
+Checkbox2.displayName = "Checkbox";
 
 // src/components/MultiStep/styles.ts
 var MultiStepContainer = styled("div", {});
@@ -647,6 +655,7 @@ function MultiStep({ size, currentStep = 1 }) {
     return /* @__PURE__ */ React4.createElement(Step, { key: step, active: currentStep >= step });
   })));
 }
+MultiStep.displayName = "MultiStep";
 export {
   Avatar2 as Avatar,
   Box,

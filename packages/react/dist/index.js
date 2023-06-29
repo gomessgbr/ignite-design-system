@@ -178,6 +178,7 @@ var Box = styled("div", {
   backgroundColor: "$gray200",
   border: "1px solid $gray600"
 });
+Box.displayName = "Box";
 
 // src/components/Text.tsx
 var Text = styled("p", {
@@ -206,6 +207,7 @@ var Text = styled("p", {
     size: "md"
   }
 });
+Text.displayName = "Text";
 
 // src/components/Heading.tsx
 var Heading = styled("h2", {
@@ -229,6 +231,7 @@ var Heading = styled("h2", {
     size: "md"
   }
 });
+Heading.displayName = "Heading";
 
 // src/components/Avatar/index.tsx
 var import_react6 = __toESM(require("react"));
@@ -445,6 +448,7 @@ g3.displayName = "User";
 function Avatar2(props) {
   return /* @__PURE__ */ import_react6.default.createElement(AvatarContainer, null, /* @__PURE__ */ import_react6.default.createElement(AvatarImage, __spreadValues({}, props)), /* @__PURE__ */ import_react6.default.createElement(AvatarFallback, { delayMs: 600 }, /* @__PURE__ */ import_react6.default.createElement(g3, null)));
 }
+Avatar2.displayName = "Avatar";
 
 // src/components/Button.tsx
 var Button = styled("button", {
@@ -517,6 +521,7 @@ var Button = styled("button", {
     size: "md"
   }
 });
+Button.displayName = "Button";
 
 // src/components/TextInput/index.tsx
 var import_react8 = __toESM(require("react"));
@@ -568,6 +573,7 @@ function TextInput(_a) {
   var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
   return /* @__PURE__ */ import_react8.default.createElement(TextInputContainer, null, !!prefix && /* @__PURE__ */ import_react8.default.createElement(Prefix, null, prefix), /* @__PURE__ */ import_react8.default.createElement(Input, __spreadValues({}, props)));
 }
+TextInput.displayName = "TextInput";
 
 // src/components/TextArea.tsx
 var TextArea = styled("textarea", {
@@ -594,6 +600,7 @@ var TextArea = styled("textarea", {
     color: "$gray400"
   }
 });
+TextArea.displayName = "TextArea";
 
 // src/components/CheckBox/index.tsx
 var import_react9 = __toESM(require("react"));
@@ -653,6 +660,7 @@ var CheckboxIndicator = styled(Checkbox.Indicator, {
 function Checkbox2(props) {
   return /* @__PURE__ */ import_react9.default.createElement(CheckboxContainer, __spreadValues({}, props), /* @__PURE__ */ import_react9.default.createElement(CheckboxIndicator, { asChild: true }, /* @__PURE__ */ import_react9.default.createElement(M2, { weight: "bold" })));
 }
+Checkbox2.displayName = "Checkbox";
 
 // src/components/MultiStep/styles.ts
 var MultiStepContainer = styled("div", {});
@@ -688,6 +696,7 @@ function MultiStep({ size, currentStep = 1 }) {
     return /* @__PURE__ */ import_react11.default.createElement(Step, { key: step, active: currentStep >= step });
   })));
 }
+MultiStep.displayName = "MultiStep";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
