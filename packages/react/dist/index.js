@@ -64,6 +64,7 @@ __export(src_exports, {
   Button: () => Button,
   Checkbox: () => Checkbox2,
   Heading: () => Heading,
+  MultiStep: () => MultiStep,
   Text: () => Text,
   TextArea: () => TextArea,
   TextInput: () => TextInput
@@ -652,6 +653,41 @@ var CheckboxIndicator = styled(Checkbox.Indicator, {
 function Checkbox2(props) {
   return /* @__PURE__ */ import_react9.default.createElement(CheckboxContainer, __spreadValues({}, props), /* @__PURE__ */ import_react9.default.createElement(CheckboxIndicator, { asChild: true }, /* @__PURE__ */ import_react9.default.createElement(M2, { weight: "bold" })));
 }
+
+// src/components/MultiStep/styles.ts
+var MultiStepContainer = styled("div", {});
+var Label = styled(Text, {
+  color: "$gray200",
+  defaultVariants: {
+    size: "xs"
+  }
+});
+var Steps = styled("div", {
+  display: "grid",
+  gridTemplateColumns: "repeat(var(--steps-size), 1fr)",
+  gap: "$2",
+  marginTop: "$1"
+});
+var Step = styled("div", {
+  height: "$1",
+  borderRadius: "$px",
+  backgroundColor: "$gray600",
+  variants: {
+    active: {
+      true: {
+        backgroundColor: "$gray100"
+      }
+    }
+  }
+});
+
+// src/components/MultiStep/index.tsx
+var import_react11 = __toESM(require("react"));
+function MultiStep({ size, currentStep = 1 }) {
+  return /* @__PURE__ */ import_react11.default.createElement(MultiStepContainer, null, /* @__PURE__ */ import_react11.default.createElement(Label, null, "Passo ", currentStep, " de ", size), /* @__PURE__ */ import_react11.default.createElement(Steps, { css: { "--steps-size": size } }, Array.from({ length: size }, (_, i) => i + 1).map((step) => {
+    return /* @__PURE__ */ import_react11.default.createElement(Step, { key: step, active: currentStep >= step });
+  })));
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
@@ -659,6 +695,7 @@ function Checkbox2(props) {
   Button,
   Checkbox,
   Heading,
+  MultiStep,
   Text,
   TextArea,
   TextInput

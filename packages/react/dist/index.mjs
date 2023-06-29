@@ -612,12 +612,48 @@ var CheckboxIndicator = styled(Checkbox.Indicator, {
 function Checkbox2(props) {
   return /* @__PURE__ */ React3.createElement(CheckboxContainer, __spreadValues({}, props), /* @__PURE__ */ React3.createElement(CheckboxIndicator, { asChild: true }, /* @__PURE__ */ React3.createElement(M2, { weight: "bold" })));
 }
+
+// src/components/MultiStep/styles.ts
+var MultiStepContainer = styled("div", {});
+var Label = styled(Text, {
+  color: "$gray200",
+  defaultVariants: {
+    size: "xs"
+  }
+});
+var Steps = styled("div", {
+  display: "grid",
+  gridTemplateColumns: "repeat(var(--steps-size), 1fr)",
+  gap: "$2",
+  marginTop: "$1"
+});
+var Step = styled("div", {
+  height: "$1",
+  borderRadius: "$px",
+  backgroundColor: "$gray600",
+  variants: {
+    active: {
+      true: {
+        backgroundColor: "$gray100"
+      }
+    }
+  }
+});
+
+// src/components/MultiStep/index.tsx
+import React4 from "react";
+function MultiStep({ size, currentStep = 1 }) {
+  return /* @__PURE__ */ React4.createElement(MultiStepContainer, null, /* @__PURE__ */ React4.createElement(Label, null, "Passo ", currentStep, " de ", size), /* @__PURE__ */ React4.createElement(Steps, { css: { "--steps-size": size } }, Array.from({ length: size }, (_, i) => i + 1).map((step) => {
+    return /* @__PURE__ */ React4.createElement(Step, { key: step, active: currentStep >= step });
+  })));
+}
 export {
   Avatar2 as Avatar,
   Box,
   Button,
   Checkbox2 as Checkbox,
   Heading,
+  MultiStep,
   Text,
   TextArea,
   TextInput
