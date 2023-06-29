@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/gomessgbr.png',
     alt: 'Diego Fernandes',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
