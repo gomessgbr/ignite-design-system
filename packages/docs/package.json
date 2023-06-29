@@ -1,12 +1,12 @@
 {
-  "name": "@ignite-ui/docs",
+  "name": "@gomes-ui/docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "storybook dev -p 6006",
-    "deploy-storybook":"storybook-to-ghpages",
+    "deploy-storybook": "storybook-to-ghpages",
     "build": "storybook build"
   },
   "keywords": [],
@@ -27,10 +27,10 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@ignite-ui/eslint-config": "*",
-    "@ignite-ui/react": "*",
-    "@ignite-ui/tokens": "*",
-    "@ignite-ui/ts-config": "*",
+    "@gomes-ui/eslint-config": "*",
+    "@gomes-ui/react": "*",
+    "@gomes-ui/tokens": "*",
+    "@gomes-ui/ts-config": "*",
     "@storybook/addon-a11y": "^7.0.24",
     "polished": "^4.2.2",
     "react": "^18.2.0",
