@@ -1,0 +1,27 @@
+import{j as g}from"./jsx-runtime-6db5783a.js";import{c as ee}from"./index-20eadbd2.js";import{r as p,R as t}from"./index-532c4ca3.js";import"./extends-98964cd2.js";import"./_commonjsHelpers-042e6b4d.js";const re=p.createContext({color:"currentColor",size:"1em",weight:"regular",mirrored:!1});var ae=Object.defineProperty,u=Object.getOwnPropertySymbols,k=Object.prototype.hasOwnProperty,N=Object.prototype.propertyIsEnumerable,b=(r,e,a)=>e in r?ae(r,e,{enumerable:!0,configurable:!0,writable:!0,value:a}):r[e]=a,w=(r,e)=>{for(var a in e||(e={}))k.call(e,a)&&b(r,a,e[a]);if(u)for(var a of u(e))N.call(e,a)&&b(r,a,e[a]);return r},E=(r,e)=>{var a={};for(var o in r)k.call(r,o)&&e.indexOf(o)<0&&(a[o]=r[o]);if(r!=null&&u)for(var o of u(r))e.indexOf(o)<0&&N.call(r,o)&&(a[o]=r[o]);return a};const W=p.forwardRef((r,e)=>{const a=r,{alt:o,color:h,size:n,weight:y,mirrored:q,children:G,weights:J}=a,K=E(a,["alt","color","size","weight","mirrored","children","weights"]),f=p.useContext(re),{color:Q="currentColor",size:v,weight:U="regular",mirrored:X=!1}=f,Y=E(f,["color","size","weight","mirrored"]);return t.createElement("svg",w(w({ref:e,xmlns:"http://www.w3.org/2000/svg",width:n??v,height:n??v,fill:h??Q,viewBox:"0 0 256 256",transform:q||X?"scale(-1, 1)":void 0},Y),K),!!o&&t.createElement("title",null,o),G,J.get(y??U))});W.displayName="IconBase";var te=Object.defineProperty,oe=Object.defineProperties,ne=Object.getOwnPropertyDescriptors,O=Object.getOwnPropertySymbols,se=Object.prototype.hasOwnProperty,le=Object.prototype.propertyIsEnumerable,x=(r,e,a)=>e in r?te(r,e,{enumerable:!0,configurable:!0,writable:!0,value:a}):r[e]=a,ce=(r,e)=>{for(var a in e||(e={}))se.call(e,a)&&x(r,a,e[a]);if(O)for(var a of O(e))le.call(e,a)&&x(r,a,e[a]);return r},ie=(r,e)=>oe(r,ne(e));const me=new Map([["bold",t.createElement(t.Fragment,null,t.createElement("path",{d:"M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"}))],["duotone",t.createElement(t.Fragment,null,t.createElement("path",{d:"M216,128l-72,72V56Z",opacity:"0.2"}),t.createElement("path",{d:"M221.66,122.34l-72-72A8,8,0,0,0,136,56v64H40a8,8,0,0,0,0,16h96v64a8,8,0,0,0,13.66,5.66l72-72A8,8,0,0,0,221.66,122.34ZM152,180.69V75.31L204.69,128Z"}))],["fill",t.createElement(t.Fragment,null,t.createElement("path",{d:"M221.66,133.66l-72,72A8,8,0,0,1,136,200V136H40a8,8,0,0,1,0-16h96V56a8,8,0,0,1,13.66-5.66l72,72A8,8,0,0,1,221.66,133.66Z"}))],["light",t.createElement(t.Fragment,null,t.createElement("path",{d:"M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"}))],["regular",t.createElement(t.Fragment,null,t.createElement("path",{d:"M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"}))],["thin",t.createElement(t.Fragment,null,t.createElement("path",{d:"M218.83,130.83l-72,72a4,4,0,0,1-5.66-5.66L206.34,132H40a4,4,0,0,1,0-8H206.34L141.17,58.83a4,4,0,0,1,5.66-5.66l72,72A4,4,0,0,1,218.83,130.83Z"}))]]),$=p.forwardRef((r,e)=>t.createElement(W,ie(ce({ref:e},r),{weights:me})));$.displayName="ArrowRight";const ye={title:"Form/Button",component:ee,args:{children:"Send",variant:"primary",size:"md",disabled:!1},argTypes:{variant:{options:["primary","secondary","tertiary"],control:{type:"inline-radio"}},size:{options:["sm","md"],control:{type:"inline-radio"}},disabled:{control:{type:"boolean"}},onClick:{action:"click"}}},s={},l={args:{variant:"secondary",children:"Create new"}},c={args:{variant:"tertiary",children:"Cancel"}},i={args:{size:"sm"}},m={args:{children:g.jsxs(g.Fragment,{children:["Próximo passo",g.jsx($,{weight:"bold"})]})}},d={args:{disabled:!0}};var j,P,S;s.parameters={...s.parameters,docs:{...(j=s.parameters)==null?void 0:j.docs,source:{originalSource:"{}",...(S=(P=s.parameters)==null?void 0:P.docs)==null?void 0:S.source}}};var A,H,C;l.parameters={...l.parameters,docs:{...(A=l.parameters)==null?void 0:A.docs,source:{originalSource:`{
+  args: {
+    variant: 'secondary',
+    children: 'Create new'
+  }
+}`,...(C=(H=l.parameters)==null?void 0:H.docs)==null?void 0:C.source}}};var z,L,M;c.parameters={...c.parameters,docs:{...(z=c.parameters)==null?void 0:z.docs,source:{originalSource:`{
+  args: {
+    variant: 'tertiary',
+    children: 'Cancel'
+  }
+}`,...(M=(L=c.parameters)==null?void 0:L.docs)==null?void 0:M.source}}};var F,R,Z;i.parameters={...i.parameters,docs:{...(F=i.parameters)==null?void 0:F.docs,source:{originalSource:`{
+  args: {
+    size: 'sm'
+  }
+}`,...(Z=(R=i.parameters)==null?void 0:R.docs)==null?void 0:Z.source}}};var B,I,V;m.parameters={...m.parameters,docs:{...(B=m.parameters)==null?void 0:B.docs,source:{originalSource:`{
+  args: {
+    children: <>
+        Próximo passo
+        <ArrowRight weight="bold" />
+      </>
+  }
+}`,...(V=(I=m.parameters)==null?void 0:I.docs)==null?void 0:V.source}}};var D,T,_;d.parameters={...d.parameters,docs:{...(D=d.parameters)==null?void 0:D.docs,source:{originalSource:`{
+  args: {
+    disabled: true
+  }
+}`,...(_=(T=d.parameters)==null?void 0:T.docs)==null?void 0:_.source}}};const fe=["Primary","Secondary","Tertiary","Small","WithIcon","Disabled"];export{d as Disabled,s as Primary,l as Secondary,i as Small,c as Tertiary,m as WithIcon,fe as __namedExportsOrder,ye as default};
+//# sourceMappingURL=Button.stories-9a812453.js.map
