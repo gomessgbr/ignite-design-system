@@ -3,12 +3,14 @@
   "workspaces": [
     "packages/*"
   ],
-"scripts": {
-  "dev": "turbo run dev --parallel",
-  "build": "turbo run build"
-},
-
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
+  },
   "devDependencies": {
     "turbo": "^1.10.6"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.0.10"
   }
 }
